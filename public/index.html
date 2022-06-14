@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Matematično modeliranje - prepoznavanje uporabnika tipkovnice</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="./main.css">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="header">
+                <h2 class="text-center">Matematično modeliranje</h2>
+                <h4 class="text-center">Prepoznavanje uporabnika tipkovnice</h4>
+                <input type="text" class="name" id="username" placeholder="Ime">
+            </div>
+
+            <div class="navodila text-justify">
+                <!-- navodila kako uporabljati aplikacijo -->
+                <ol>
+                <li>Aplikacija meri čas med zaporednima pritiskoma tipk. Besedil je 11 in so približno enake dolžine.
+                <li>Pred začetkom merjenja je <b>potrebno pritisniti gumb <i>Začetek</i></b>. Pred tem lahko poljubno testirate svoje tipkanje.</li>
+                <li>Po končanem tipkanju pritisnite gumb <i>Naslednji</i> ali <i>Konec</i>. Pomembno je, da so <b>vsi znaki v besedilu vnešeni</b>, ni pa pomembno pravilno črkovanje besedila (lahko se zmotite in pustite).</li>
+                </ol>
+            </div>
+            <div class="test-container" id="test" style="display: block;">
+                <h4><span id="primer"></span>/11</h4>
+                <p class="text-justify" id="text1">
+                    <span class="correct" id="correct1"></span><span id="before1"></span>
+                </p>
+                <textarea type="text" class="area" id="area1"></textarea><br>
+                <button class="btn btn-success" onclick="zacetek1()" id="zacetek">Začetek</button>
+                <button class="btn btn-primary" onclick="naslednji()" id="naslednji" style="">Naslednji</button>
+                <button class="btn btn-primary" onclick="konec1()" id="konec" style="display:none;">Konec</button>
+            </div>
+
+            <div class="thanks-container" id="thanks" style="display: none;">
+                <h2>Hvala za sodelovanje!</h2>
+            </div>
+
+            <script src="./main.js" type="text/javascript"></script>
+        </div>
+    </body>
+</html>
