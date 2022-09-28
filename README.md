@@ -1,3 +1,3 @@
-Matematično modeliranje - prepoznavanje uporabnika tipkovnice
+Mathematical modelling - keyboard user recognition
 
-Spletna stran za pridobivanje podatkov o načinu tipkanja uporabnika.
+This website is used for collection of data showing users style of typing
